@@ -82,7 +82,7 @@ module.exports = {
                         res.status(400).send(new ApiResponse("Invalid value. For dimmers you should provide an integer between 0 and 100", 400));
                     }
 
-                } elseif(req.body.type && req.body.type.toLowerCase() === "brel_ud_curtain") {
+                } else if(req.body.type && req.body.type.toLowerCase() === "brel_ud_curtain") {
                     // Device is a curtain, identified as "brel_ud_curtain"
                     // Variable to store wanted Action 
                     let actionValue;
