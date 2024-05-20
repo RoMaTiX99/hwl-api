@@ -94,7 +94,7 @@ module.exports = {
                     } else if(req.body.value.toLowerCase() === "down"){
                         actionValue = "Down";
                     } else {
-                        res.status(400).send(new ApiResponse("Invalid value. For curtain typ brel_ud_curtain you should provide 'Up', 'Down' or 'Stop'", 400));
+                        res.status(400).send(new ApiResponse("Invalid value. For curtain typ brel_ud_curtain you should provide 'Up', 'Down' or 'Stop'. Received Body Type: " + req.body.type, 400));
                     }
 
                     // create data object with selected Action 
