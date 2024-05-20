@@ -89,9 +89,9 @@ module.exports = {
                     
                     if (req.body.value.toLowerCase() === "up") {
                         actionValue = "Up";
-                    } elseif(req.body.value.toLowerCase() === "stop"){
+                    } else if(req.body.value.toLowerCase() === "stop"){
                         actionValue = "Stop";
-                    } elseif(req.body.value.toLowerCase() === "down"){
+                    } else if(req.body.value.toLowerCase() === "down"){
                         actionValue = "Down";
                     } else {
                         res.status(400).send(new ApiResponse("Invalid value. For curtain typ brel_ud_curtain you should provide 'Up', 'Down' or 'Stop'", 400));
